@@ -1,0 +1,7 @@
+{
+  "PORT": 3011,
+  "MONGODB_URI": "mongodb+srv://alex:ICBZCa0ta3jLtDQl@cluster0-tyjtp.mongodb.net/kt_telecom",
+  "URL_Dog_API_GET": "https://dog.ceo/api/breeds/image/random",
+  "COUNT_DOGS": 100,
+  "COUNT_PAGE": 10
+}
