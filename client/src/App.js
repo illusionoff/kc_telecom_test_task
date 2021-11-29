@@ -172,7 +172,7 @@ function App() {
             <div className="row">
               {/* <div className="col s3"></div> */}
               <div className="col s6 text-center">
-                <h2 className="text-center ">Породы собак</h2>
+                <h1 className="text-center ">Породы собак</h1>
                 <div className="input-group ">
                   <p className="text-muted">Поиск по заголовку</p>
                   <input
