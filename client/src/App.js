@@ -24,6 +24,7 @@ function Items({ currentItems }) {
   return ВogsDataTable(currentItems)
 }
 
+//Пагинация
 function PaginatedItems({ itemsPerPage, filteredData1 }) {
   console.log('filteredData1=', filteredData1)
   const items = filteredData1;
@@ -178,6 +179,7 @@ function App() {
                   <input
                     type="search"
                     className="form-control rounded"
+                    id="textInput"
                     placeholder="Search"
                     value={q}
                     onChange={(e) => {
@@ -192,6 +194,7 @@ function App() {
                   />
                   <button type="button" className="btn btn-primary" onClick={() => {
                     console.log('button2');
+                    setQ(''); // очищаем поле ввода
                     setFilteredData(dataFromServer);
                   }
                   }>Сбросить поиск
