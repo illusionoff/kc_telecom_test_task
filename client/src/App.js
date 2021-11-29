@@ -74,7 +74,7 @@ function PaginatedItems({ itemsPerPage, filteredData1 }) {
         activeClassName="active"
         renderOnZeroPageCount={null}
       />
-      <table className="table">
+      <table className="table striped">
         <thead>
           <tr>
             <th>Заголовок</th>
