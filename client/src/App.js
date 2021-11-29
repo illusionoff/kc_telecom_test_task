@@ -54,19 +54,6 @@ function PaginatedItems({ itemsPerPage, filteredData1 }) {
 
   return (
     <>
-      <table className="table">
-        <thead>
-          <tr>
-            <th>Заголовок</th>
-            <th>Картинка</th>
-            <th>Порода</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* {ВogsDataTable(filteredData)} */}
-          <Items currentItems={currentItems} />
-        </tbody>
-      </table>
       {/* <Items currentItems={currentItems} /> */}
       <ReactPaginate
         nextLabel="next >"
@@ -87,6 +74,19 @@ function PaginatedItems({ itemsPerPage, filteredData1 }) {
         activeClassName="active"
         renderOnZeroPageCount={null}
       />
+      <table className="table">
+        <thead>
+          <tr>
+            <th>Заголовок</th>
+            <th>Картинка</th>
+            <th>Порода</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* {ВogsDataTable(filteredData)} */}
+          <Items currentItems={currentItems} />
+        </tbody>
+      </table>
     </>
   );
 }
