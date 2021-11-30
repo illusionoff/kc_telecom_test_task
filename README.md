@@ -6,6 +6,7 @@
 ## [ссылка на тестовое задание"КЦ Телеком"](https://docs.google.com/document/d/1dZdYZEkzbj6RVaXYup-xPZM4daYuTsmsu2JUuCRc9Uw/edit)
 
 
+
 * Установка из корневой папки : npm i
 * Перейти в папку client: cd client
 * Установка из папки client: npm i
