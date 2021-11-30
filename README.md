@@ -13,7 +13,7 @@
 * Совершает 100 запросав к DOG API, создает коллекции  Dog и Breed и заполняет их данными
 http://localhost:3011/api/message/start
 * Удаляет все документы в   коллекциях  Dog и Breed  http://localhost:3011/api/message/del
-* Загружает данные всех  100 записей из Mongo на клиент http://localhost:3011/api/message/dogs
+* **Загружает данные всех  100 записей из Mongo на клиент. Ссылка запуска в браузера front-end части. http://localhost:3011/api/message/dogs**
 * Серверная часть использует порт 3011
 * Клиентская часть использует порт 3007 с proxi на 3011 порт
 
