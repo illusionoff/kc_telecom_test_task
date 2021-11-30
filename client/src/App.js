@@ -30,25 +30,18 @@ function App() {
 
   //useEffect для отрисовки таблицы
   useEffect(() => {
-    const getBooks = async () => {
-      getData().then((data) => {
-        console.log('hook=', data);
+    getData().then((data) => {
+      console.log('hook=', data);
 
-        setDataFromServer(data);
-        setFilteredData(data);
-
-        console.log('hook2=', data);
-        // console.log('hook3=', data[0].breed);
-        let dataSelect = data.map((item) => {
-          return { value: item.breed, label: item.breed, arrObj: [item] }
-        })
-        console.log('dataSelect=', dataSelect)
-        setOptionData(dataSelect);
-        console.log('selectedOption=', selectedOption)
+      setDataFromServer(data);
+      setFilteredData(data);
+      let dataSelect = data.map((item) => {
+        return { value: item.breed, label: item.breed, arrObj: [item] }
       })
-    };
-
-    getBooks();
+      console.log('dataSelect=', dataSelect)
+      setOptionData(dataSelect);
+      console.log('selectedOption=', selectedOption)
+    })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -81,7 +74,6 @@ function App() {
         <div className="container">
           <div className="container-fluid padding">
             <div className="row">
-              {/* <div className="col s3"></div> */}
               <div className="col s6 text-center">
                 <h1 className="text-center ">Породы собак</h1>
                 <div className="input-group ">
@@ -105,7 +97,7 @@ function App() {
                   <button type="button" className="btn btn-primary" onClick={() => {
                     console.log('button2');
                     setQ(''); // очищаем поле ввода
-                    setFilteredData(dataFromServer);
+                    setFilteredData(dataFromServer);// сбрасываем отображение в таблице выбранной из  select породы
                   }
                   }>Сбросить поиск
                   </button>

@@ -14,7 +14,6 @@ function ВogsDataTable(dogsData) {
     ))
     : null
 }
-// const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 function Items({ currentItems }) {
   return ВogsDataTable(currentItems)
@@ -48,7 +47,6 @@ export const PaginatedItems = ({ itemsPerPage, filteredData1 }) => {
 
   return (
     <>
-      {/* <Items currentItems={currentItems} /> */}
       <ReactPaginate
         nextLabel="next >"
         onPageChange={handlePageClick}
@@ -77,7 +75,6 @@ export const PaginatedItems = ({ itemsPerPage, filteredData1 }) => {
           </tr>
         </thead>
         <tbody>
-          {/* {ВogsDataTable(filteredData)} */}
           <Items currentItems={currentItems} />
         </tbody>
       </table>
