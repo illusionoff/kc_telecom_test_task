@@ -107,9 +107,7 @@ function App() {
   //useEffect для select
   useEffect(() => {
     console.log('selectedOption=', selectedOption);
-    if (selectedOption === null) {
-    }
-    else {
+    if (selectedOption !== null) {
       console.log('selectedOption=====', selectedOption)
       console.log('selectedOption.title=====', selectedOption.title)
       console.log('filteredData-----', filteredData)
